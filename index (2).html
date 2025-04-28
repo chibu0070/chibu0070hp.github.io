@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Personal Home Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<style>
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #89f7fe, #66a6ff);
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header Styling */
+.c-site-header {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.c-site-header h1 {
+  font-size: 2.5rem;
+  color: #222;
+}
+
+.c-site-header p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+/* Navbar Styling (Hamburger Menu) */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff88;
+  padding: 10px 20px;
+  border-radius: 12px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .nav-links.show {
+    display: flex;
+  }
+  
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Fade-In Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #555;
+}
+/* Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+</style>
+  <!-- Single Header with c-site-header class -->
+  <header class="c-site-header">
+    <h1>Hello, I'm Chibuikem Okwu</h1>
+    <p>Welcome to my personal space on the web! I'm thrilled to share my journey and the things that excite me. This page is a representation of my passions and interests. You'll find information about my projects, skills, and ways to get in touch with me.</p>
+    <!-- Mobile Hamburger Menu -->
+    <nav class="navbar" aria-label="Main Site Links">
+      <div class="logo">Chibuikem Okwu</div>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main content of the site, now wrapped in a single <main> -->
+  <main>
+    <section class="about-me fade-in" id="about">
+      <h2>About Me</h2>
+      <p>Hello! I’m Chibuikem, Chibu for short. A passionate learner and aspiring developer who is fascinated by technology and design. Over the years, I’ve explored different areas of tech, from web development to problem-solving through coding, and I’m constantly seeking ways to improve my skills and broaden my knowledge.<br>
+
+I’m driven by a curiosity for how things work, and I enjoy building projects that not only challenge me but also make a positive impact on users’ lives. Whether it’s creating websites, experimenting with new programming languages, or developing solutions for real-world problems, I find joy in the process of creating and learning.<br>
+
+In addition to my technical interests, I’m a firm believer in the power of collaboration and community. I love working with others to bring ideas to life and learning from the diverse perspectives people bring to the table. When I’m not coding, you can find me reading, exploring new tech trends, or tackling creative projects that fuel my imagination.<br>
+
+I’m always open to connecting with like-minded individuals, whether it’s for collaboration, mentoring, or just sharing ideas. Feel free to reach out to me!</p>
+      <!-- Adding an image -->
+      <img src="path/to/your-image.jpg" alt="A placeholder image of me" width="500" height="534" />
+    </section>
+
+    <section class="projects fade-in" id="projects">
+      <h2>My Projects</h2>
+      <ul>
+        <li>🔗 <a href="https://chibu0070.wixsite.com/ceods">Project 1: A web page which highlights my first attempt at web development.</a></li>
+        <li>🔗 <a href="https://www.youtube.com/@ChibuikemOkwu">Project 2: An animated character experience which was a commission by a client.</a></li>
+        <li>🔗 <a href="https://mogambocomics.blogspot.com/">Project 3: A personal blog platform where I share my experiences, thoughts, and learnings from my artistic journey.</a></li>
+      </ul>
+    </section>
+
+    <section class="contact fade-in" id="contact">
+      <h2>Contact Me</h2>
+      <p>If you'd like to get in touch, feel free to reach out to me via email or connect with me on social media. I am always open to discussing new projects, collaboration opportunities, or just having a conversation about technology and programming. I value meaningful connections and enjoy helping others along their tech journeys.</p>
+      <p>📧 Email me at: <a href="mailto:chibu0070@gmail.com">chibu0070@gmail.com</a></p>
+      <p>🌐 Find me on <a href="https://www.linkedin.com/in/chibuikem-okwu-59268a5b/" target="_blank">LinkedIn</a> and <a href="https://github.com/chibu0070" target="_blank">GitHub</a>.</p>
+    </section>
+
+    <!-- Embedding a YouTube video -->
+    <section class="video-section">
+      <h2>My Favorite Coding Video</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/1oA7FbO0YVM?si=Cy8ykYKZcaQ5feEN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p>Here's a great video on coding basics! It's one of my go-to resources for learning new techniques and keeping my skills sharp.</p>
+    </section>
+
+  </main>
+
+  <!-- Single Footer with c-site-footer class -->
+  <footer class="c-site-footer">
+    <p>© 2025 Chibuikem Okwu | Built with ❤️</p>
+  </footer>
+
+</body>
+</html>
